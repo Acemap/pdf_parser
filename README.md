@@ -13,7 +13,10 @@ To use this project, ensure that your environment has ***Python 3.6+*** and ***J
 
 Install using `pip`.
 ``` shell
-pip install -U git+https://github.com/Acemap/pdf_parser.git
+git clone https://github.com/Acemap/pdf_parser.git
+cd pdf_parser
+pip install -r requirements.txt
+python setup install
 ```
 
 ## Usage
@@ -56,7 +59,6 @@ parser.parse('text', '/path/to/xxx.pdf', '/path/to/output', 50)
 parser.parse('figure', '/path/to/pdf_dir    ', '/path/to/output', 50)
 ```
 
-
 ## Development progress 
 
 Backend↓ / Type→ | text | image | reference
@@ -76,3 +78,17 @@ cermine | All (Windows/Linux/Mac) | Need | No
 scienceparse | All (Windows/Linux/Mac) | Need | No
 pdffigures | Linux/Mac | Not Need | leptonica & poppler (Ubuntu: sudo apt install libpoppler-private-dev libleptonica-dev)
 pdffigures2 | All (Windows/Linux/Mac) | Need | No
+
+
+## Citation
+
+```
+@misc{sciparser,
+  author = {Cheng Deng, Yuting Jia, Shuhao Li},
+  title = {pdf_parser: All in one PDF Parser Toolkits},
+  year = {2023},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  howpublished = {\url{https://github.com/Acemap/pdf_parser}},
+}
+```
