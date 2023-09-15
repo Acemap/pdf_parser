@@ -1,5 +1,5 @@
 # PDF Parser
-> All in one PDF Parser Toolkits
+> All in one PDF Parser Toolkit
 
 ## Introduction
 
